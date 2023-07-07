@@ -29,7 +29,8 @@
          05 WS-CPF     PIC 9(11) VALUE 0.
          05 WS-ADDRESS PIC X(80) VALUE SPACES.
          05 WS-MEDIA   PIC 99V99.
-
+       01 WS-MAT       PIC 9(05).
+       01 WS-MAT-ESP   PIC 9(03).
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
            DISPLAY "******** DADOS ********"
@@ -47,6 +48,8 @@
             DISPLAY 'RG:........' WS-RG
             DISPLAY 'CPF:.......' WS-CPF
             DISPLAY 'ENDERECO:..' WS-ADDRESS
+            DISPLAY 'MATRICULA:.' WS-MAT
+            DISPLAY 'MAT. ESP:..' WS-MAT-ESP
            END-READ
             END-PERFORM
 
