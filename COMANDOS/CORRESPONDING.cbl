@@ -23,7 +23,7 @@
 
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
-            DISPLAY ' SEM MOVE '
+            DISPLAY '----------- SEM MOVE -----------  '
             MOVE 'RHAYADH'                 TO WS-NOME    OF WS-REG-1
             MOVE 991056042                 TO WS-TEL     OF WS-REG-1
             MOVE 'SP'                      TO WS-UF      OF WS-REG-1
@@ -52,7 +52,7 @@
       ******* DEVIDO AO FATO DAS VARIAVEIS NAO ESTAREM NA MESMA ORDEM **
       ************** A MOVIMENTACAO FICA INCOERENTE/BAGUNCADA **********
 
-            DISPLAY ' COM MOVE SIMPLES '
+            DISPLAY ' ---------- COM MOVE SIMPLES -----------'
 
             MOVE WS-REG-1                   TO WS-REG-2
             DISPLAY '*** WS-REG-1 ***'
@@ -77,7 +77,7 @@
       ****** INDEPENDENTE DA ORDEM DAS VARIAVEIS, COM CORR... O CAMPO **
       *************** SERA CORRESPONDIDO AO CAMPO RELACIONADO **********
 
-            DISPLAY ' COM MOVE CORR '
+            DISPLAY '----------- COM MOVE CORR ----------- '
             MOVE CORR WS-REG-1             TO WS-REG-2
             DISPLAY '*** WS-REG-1 ***'
             DISPLAY WS-REG-1
