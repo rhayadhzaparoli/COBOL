@@ -158,7 +158,7 @@
            MOVE ZEROS              TO IND
                DISPLAY ' NUMERO:        NOME: '
 
-           PERFORM VARYING IND FROM 1 BY 1 UNTIL IND EQUALS 8
+           PERFORM VARYING IND FROM 1 BY 1 UNTIL IND GREATER 7
                DISPLAY '    ' DAY-NMB(IND) '         ' DAY-NM(IND)
            END-PERFORM
 
